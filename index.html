@@ -9,6 +9,7 @@
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
@@ -29,6 +30,19 @@
             font-size: 1rem;
             color: #666;
         }
+        footer {
+            position: absolute;
+            bottom: 20px;
+            text-align: center;
+            color: #999;
+            font-size: 0.9rem;
+        }
+        footer img {
+            width: 80px;
+            opacity: 0.5;
+            filter: grayscale(100%);
+            margin-bottom: 5px;
+        }
     </style>
 </head>
 <body>
@@ -40,6 +54,11 @@
            But take this time to reflect on your choices that led you here.</p>
         <p class="redirect-msg">(Redirecting in <span id="countdown">10</span> seconds... or whenever I feel like it.)</p>
     </div>
+
+    <footer>
+        <img src="https://mytab.knovon.net/knovontablogo.png" alt="Knovon Logo">
+        <p>Powered by Knovon</p>
+    </footer>
 
     <script>
         let countdown = 10;

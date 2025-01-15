@@ -1,28 +1,29 @@
-/* External CSS file: login.css */
+/* General Styling */
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #f7f9fc;
 }
 
 .container {
     display: flex;
     max-width: 900px;
     width: 90%;
+    height: 500px;
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     background: #fff;
 }
 
 /* Left Section: Info Box */
 .info-section {
     flex: 1;
-    background: url('https://example.com/your-image.jpg') no-repeat center;
+    background: url('{{bgImageUrl}}') no-repeat center center;
     background-size: cover;
     color: #fff;
     display: flex;
@@ -34,7 +35,8 @@ body {
 }
 .info-section h1 {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: bold;
+    margin-bottom: 10px;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 .info-section p {
@@ -46,58 +48,10 @@ body {
 /* Right Section: Sign-In Box */
 .signin-section {
     flex: 1;
-    padding: 40px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-}
-.signin-section h2 {
-    font-size: 1.8rem;
-    color: #0047ab;
-    margin-bottom: 20px;
-}
-
-/* Okta Widget Customization */
-.okta-form-title {
-    font-size: 1.5rem;
-    color: #0047ab;
-    text-align: center;
-    margin-bottom: 20px;
-}
-.o-form-input {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 15px;
-}
-.o-form-input:focus {
-    border-color: #0047ab;
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 71, 171, 0.5);
-}
-.button-primary {
-    background: #0047ab;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 12px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-.button-primary:hover {
-    background: #003580;
-}
-
-.footer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.85rem;
-    color: #666;
-}
-.footer a {
-    color: #0047ab;
-    text-decoration: none;
-}
-.footer a:hover {
-    text-decoration: underline;
+    align-items: center;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: -10px 0px 15px rgba(0, 0, 0, 0.05);
 }
